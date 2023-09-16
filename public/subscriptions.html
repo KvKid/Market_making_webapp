@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriptions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <h1>Your Subscriptions</h1>
+    </header>
+
+    <nav>
+        <a href="dashboard.html">Home</a>
+        <a href="subscription.html" class="active">Subscriptions</a>
+    </nav>
+
+    <section class="subscription-plans">
+        <div class="plan">
+            <h2>Basic</h2>
+            <ul>
+                <li>Random feature 1</li>
+            </ul>
+            <p class="price">$1/month</p>
+            <input type="checkbox" class="plan-select" data-price="100" name="plan" value="Basic">
+        </div>
+    
+        <div class="plan">
+            <h2>Pro</h2>
+            <ul>
+                <li>Random feature 1</li>
+                <li>Random feature 2</li>
+            </ul>
+            <p class="price">$2/month</p>
+            <input type="checkbox" class="plan-select" data-price="200" name="plan" value="Pro">
+        </div>
+    
+        <div class="plan">
+            <h2>Expert</h2>
+            <ul>
+                <li>Random feature 1</li>
+                <li>Random feature 2</li>
+                <li>Random feature 3</li>
+                <li>Random feature 4</li>
+                <li>Random feature 5</li>
+            </ul>
+            <p class="price">$5/month</p>
+            <input type="checkbox" class="plan-select" data-price="500" name="plan" value="Expert">
+        </div>
+    </section>
+
+    <section class="checkout">
+        <h2>Checkout: <span id="selected-price">$0</span></h2>
+        <form action="#" method="POST" id="payment-form">
+            <div class="form-row">
+                <label for="card-element">Credit or debit card</label>
+                <div id="card-element"><!-- Stripe's UI will be inserted here --></div>
+                <!-- Used to display form errors -->
+                <div id="card-errors" role="alert"></div>
+            </div>
+            <button type="submit" disabled id="checkout-button">Proceed to Payment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 Your Website</p>
+    </footer>
+
+    <script src="subscriptions.js"></script>
+</body>
+</html>

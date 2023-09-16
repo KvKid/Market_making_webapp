@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        header {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            padding: 2em;
+            max-width: 400px;
+            margin: 2em auto;
+            border: 1px solid #eee;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+        .btn-signup {
+            display: block;
+            width: 100%;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-signup:hover {
+            background-color: darkred;
+        }
+
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Signup Page</h1>
+    </header>
+    <main>
+        <form action="/register" method="post" id="signupForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="username" required>
+            <div id="firstNameError" style="color: red;"></div>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <div id="lastNameError" style="color: red;"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <div id="passwordMismatchError" style="color: red;"></div>
+
+            <label>Date of Birth:</label>
+            <div>
+                <select id="day" name="day" required>
+                    <option value="">Day</option>
+                </select>
+        
+                <select id="month" name="month" required>
+                    <option value="">Month</option>
+                </select>
+        
+                <select id="year" name="year" required>
+                    <option value="">Year</option>
+                </select>
+            </div>
+        
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="GB">United Kingdom</option>
+                <!-- ... add more countries as needed -->
+            </select>
+            <button type="submit" class="btn-signup">Signup</button>
+            <div id="errorMessages" style="color:red;"></div>
+
+        </form>
+        
+        <a href="login.html" class="login-link">Already have an account? Login here</a>
+    </main>
+    <script src="signup.js"></script>
+</body>
+</html>

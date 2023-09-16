@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.login-btn:hover {
+    background-color: #333;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* ... (previous styles) ... */
+
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #f5f5f5;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.submit-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: darkred;
+}
+
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* For the navigation menu */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a.active, nav a:hover {
+    background-color: #555;
+    text-decoration: none;
+}
+
+/* For highlighting the active page in the navigation menu */
+.active {
+    background-color: red;
+    color: white;
+}
+
+/* For the main content section */
+section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+}
+
+/* ... (previous styles) ... */
+/* ... (previous styles) ... */
+
+/* Styling for subscription plans */
+.subscription-plans {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.plan {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    background-color: #f0f0f0; 
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;  /* Added spacing between bullet points and prices */
+}
+
+.plan li {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5rem;   /* Making the price slightly bigger */
+    margin-bottom: 20px; /* Spacing between the price and the button */
+}
+
+.btn-buy {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: darkred;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.player-section, .user-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #4A90E2;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #8e8e8e;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.readonly {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.player h2 {
+    margin: 0;
+    flex: 1;
+    color: #007BFF;
+}
+
+.player-info {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-info label {
+    margin-right: 10px;
+}
+
+.player-info input[type="text"] {
+    width: calc(50% - 15px); /* -15px accounts for label and space between */
+}
+
+
+.user-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.user-section label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.user-section input[type="text"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        .readonly {
+            background-color: #f5f5f5; /* grayish background */
+            border: none; /* remove borders */
+        }
+    </style>
+</head>
+<body>
+    <div class="player-section">
+        <button onclick="startGame()">Start Game</button>
+
+        <h1>Table Cards</h1>
+        <div id="tableCards">
+            <!-- The table cards data will be displayed here -->
+        </div>
+
+        <h1>Players</h1>
+
+        <!-- Player 0 -->
+        <div class="player" id="player0">
+            <h2>Player 0</h2>
+            <div class="player-info">
+                <div>
+                    <label for="market0">Market:</label>
+                    <input type="text" id="market0" placeholder="Market value..." readonly>
+                </div>
+                <div>
+                    <label for="action0">Action:</label>
+                    <input type="text" id="action0" placeholder="Action..." readonly>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player 1 -->
+        <div class="player" id="player1">
+            <h2>Player 1</h2>
+            <div class="player-info">
+                <div>
+                    <label for="market1">Market:</label>
+                    <input type="text" id="market1" placeholder="Market value..." readonly>
+                </div>
+                <div>
+                    <label for="action1">Action:</label>
+                    <input type="text" id="action1" placeholder="Action..." readonly>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="player" id="player2">
+            <h2>Player 2</h2>
+            <div class="player-info">
+                <div>
+                    <label for="market2">Market:</label>
+                    <input type="text" id="market2" placeholder="Market value..." readonly>
+                </div>
+                <div>
+                    <label for="action2">Action:</label>
+                    <input type="text" id="action2" placeholder="Action..." readonly>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player 3 -->
+        <div class="player" id="player3">
+            <h2>Player 3</h2>
+            <div class="player-info">
+                <div>
+                    <label for="market3">Market:</label>
+                    <input type="text" id="market3" placeholder="Market value..." readonly>
+                </div>
+                <div>
+                    <label for="action3">Action:</label>
+                    <input type="text" id="action3" placeholder="Action..." readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="user-section">
+        <h1>User Player (Player 4)</h1>
+
+        <label for="userMarket1">Market 1:</label>
+        <input type="text" id="userMarket1" placeholder="Enter market 1 value...">
+
+        <label for="userMarket2">Market 2:</label>
+        <input type="text" id="userMarket2" placeholder="Enter market 2 value...">
+
+        <button onclick="submitUserMarkets()">Submit</button>
+
+        <h3>Action</h3>
+        <button onclick="buyAction()">Buy</button>
+        <button onclick="sellAction()">Sell</button>
+        <button onclick="noAction()">Continue Round</button>
+    </div>
+
+<script src="../socket.io/socket.io.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>

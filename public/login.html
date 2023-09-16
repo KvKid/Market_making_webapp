@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Replace with the correct path to your stylesheet -->
+</head>
+<body>
+    <header>
+        <h1>Login Page</h1>
+    </header>
+
+    <div class="main-container">
+        <form id="loginForm" class="login-container">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="submit-btn">Login</button>
+            <div id="loginStatus" style="color: red;"></div> <!-- To display error messages related to login -->
+
+            <a href="/signup" class="signup-link">Don't have an account? Signup here</a>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
